@@ -61,7 +61,6 @@ homeDirectory: <?="$home\n"; ?>
     
     $dirs = [
 	["", "751", "$uid:33"],
-	["work", "711", "$uid:users"],
 	["public", "755", "$uid:users"],
 	["private", "700", "$uid:users"],
 	["work", "751", "$uid:users"],
