@@ -63,6 +63,7 @@ homeDirectory: <?="$home\n"; ?>
 	["", "751", "$uid:33"],
 	["public", "755", "$uid:users"],
 	["private", "700", "$uid:users"],
+	["trace", "700", "$uid:users"],
 	["work", "751", "$uid:users"],
     ];
     $home = "/srv/nfs/users/$login";

@@ -29,7 +29,12 @@ function pickup()
 	{
 	    foreach ($input["work"] as $work)
 	    {
-		$dirs[] = $file = "/tmp/".$work."_".$login."/";
+		if (count($input["login"]) == 1)
+		    $dirs[] = $file = "/tmp/".$work."/";
+		else if (count($input["work"]) == 1)
+		    $dirs[] = $file = "/tmp/".$login."/";
+		else
+		    $dirs[] = $file = "/tmp/".$work."_".$login."/";
 		$out .= shell_exec("mkdir -p $file ; cp -r /srv/nfs/users/$login/work/$work/ $file");
 	    }
 	}
